@@ -8,6 +8,8 @@ from st_aggrid import AgGrid
 from googlenet import googleNet
 from keras.optimizers import Adam
 
+st.markdown("<H1 style='text-align: center;'>Klasifikasi Kualitas Biji Jagung</H1>", unsafe_allow_html=True)
+
 with st.sidebar:
     col1, col2, col3 = st.columns([2,5,2])
 
@@ -26,9 +28,8 @@ with st.sidebar:
     selected = option_menu("Main Menu", ["Home", 'About', 'Klasifikasi'], 
         icons=['house', 'info', 'search'], default_index=0)
     selected
-    
+
 if selected == "Home":
-    st.markdown("<H1 style='text-align: center;'>Klasifikasi Kualitas Biji Jagung</H1>", unsafe_allow_html=True)
     st.markdown("""<p style='text-align: justify;'>Aplikasi ini dapat digunakan untuk klasifikasi kualitas biji jagung. 
     Jagung (Zea Mays) merupakan salah satu tanaman pangan penghasil karbohidrat 
     dan merupakan makanan pokok kedua Warga Negara Indonesia setelah padi. 
@@ -49,7 +50,6 @@ if selected == "Home":
         st.write(' ')
 
 elif selected == "About":
-    st.markdown("<H1 style='text-align: center;'>Klasifikasi Kualitas Biji Jagung</H1>", unsafe_allow_html=True)
     st.markdown("""<p style='text-align: justify;'>Pada penelitian ini, klasifikasi kualitas biji jagung 
     menggunakan algoritma GoogLeNet. GoogLeNet merupakan salah satu arsitektur dari metode Convolutional 
     Neural Network (CNN).  Data yang digunakan dalam penelitian ini berbentuk citra 
@@ -73,7 +73,6 @@ elif selected == "About":
         st.bar_chart(img, height=200)
     
 else:
-    st.markdown("<H1 style='text-align: center;'>Klasifikasi Kualitas Biji Jagung</H1>", unsafe_allow_html=True)
     st.markdown("""<p style='text-align: justify;'>Aplikasi ini dapat digunakan untuk klasifikasi kualitas biji jagung.
     Upload citra biji jagung di bawah ini dan klik hasil klasifikasi untuk melihat hasilnya.</p>""", unsafe_allow_html=True)
 
