@@ -1,0 +1,9 @@
+streamlit==1.15.1
+streamlit-aggrid==0.3.4
+streamlit-option-menu==0.3.2
+numpy==1.22.0
+pandas==2.0.1
+opencv-python-headless==4.6.0.66
+keras==2.9.0
+tensorflow==2.9.1
+altair==4.2.0
